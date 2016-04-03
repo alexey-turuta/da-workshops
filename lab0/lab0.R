@@ -1,6 +1,6 @@
 # file 'present.R' and 'arbuthnot.R' downloaded in lab0 folder
-source("lab0/arbuthnot.R")
-source("lab0/present.R")
+source("arbuthnot.R")
+source("present.R")
 
 #1
 summary(present$year)
