@@ -1,6 +1,6 @@
 # file 'present.R' and 'arbuthnot.R' downloaded in lab0 folder
-source("arbuthnot.R")
-source("present.R")
+source("lab0/arbuthnot.R")
+source("lab0/present.R")
 
 #1
 summary(present$year)
@@ -24,8 +24,6 @@ plot(boys/girls ~ year, data = present,
      type = "l",  ylim = c(1.045, 1.06),
      xlab="Year", ylab="Boy-to-girl Ratio")
 dev.off()
-plot(x = arbuthnot$year, y=B2G_RationArbuthnot, type = "l",
-     xlab="Year", ylab="Boy-to-girl Ratio")
 
 summary(present$boys/(present$girls + present$boys))
 
