@@ -72,3 +72,40 @@ Console output
       year       boys      girls 
   1.180593 319.209155 324.124597 
 ```
+
+### Task 3.
+We should know max|min value for plot, let use
+```r
+> summary(present$boys/present$girls)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.046   1.050   1.051   1.051   1.053   1.059 
+```
+Plot boys to girls ration
+```r
+png(filename = "lab0/boy-to-girl_ratio.png", width = 960, height = 480,
+    pointsize = 12, bg = "white")
+plot(boys/girls ~ year, data = present, 
+     type = "l",  ylim = c(1.045, 1.06),
+     xlab="Year", ylab="Boy-to-girl Ratio")
+dev.off()
+plot(x = arbuthnot$year, y=B2G_RationArbuthnot, type = "l",
+     xlab="Year", ylab="Boy-to-girl Ratio")
+```
+
+Result on figure 1.
+![boy-to-girl_ratio]
+
+
+### Task 4.
+Year which has max sum boys and girls
+
+```r
+present[which.max(present$boys + present$girls),1] 
+```
+Result is 1961
+```r
+> present[which.max(present$boys + present$girls),1]
+[1] 1961
+```
+
+Thank you for attention.
