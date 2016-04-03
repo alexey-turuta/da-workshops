@@ -94,7 +94,7 @@ plot(x = arbuthnot$year, y=B2G_RationArbuthnot, type = "l",
 
 Result on figure 1.
 ![boy-to-girl_ratio]
-
+![boys to girls ratio](https://github.com/alexey-turuta/da-workshops/blob/master/lab0/boy-to-girl_ratio.png)
 
 ### Task 4.
 Year which has max sum boys and girls
