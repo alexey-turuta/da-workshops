@@ -1,23 +1,24 @@
 # da-workshops
 Lab0 in course Data analysis with R
 
-## My task
+## My tasks
 
 ```r
 #file downloaded and stored into lab0
-source("lab0/present.R")
+source("lab0/present.R") 
 source("lab0/arbuthnot.R")
 ```
 
 ### Task 1.
 Exporation data
 ```r
-summary(present$year)
-dim(present)
-names(present)
+summary(present$year)   #1.1
+dim(present)            #1.2
+names(present)          #1.3
 ```
 
 Console output
+```r
 >summary(present$year)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
    1940    1956    1971    1971    1986    2002 
@@ -34,7 +35,10 @@ summary(present)
 summary(arbuthnot)
 ```
 
->       year           boys             girls        
+Console output
+```r
+>summary(present)
+       year           boys             girls        
  Min.   :1940   Min.   :1211684   Min.   :1148715  
  1st Qu.:1956   1st Qu.:1799857   1st Qu.:1711405  
  Median :1971   Median :1924868   Median :1831679  
@@ -42,7 +46,8 @@ summary(arbuthnot)
  3rd Qu.:1986   3rd Qu.:2058524   3rd Qu.:1965538  
  Max.   :2002   Max.   :2186274   Max.   :2082052  
 
->      year           boys          girls     
+>summary(arbuthnot)
+      year           boys          girls     
  Min.   :1629   Min.   :2890   Min.   :2722  
  1st Qu.:1649   1st Qu.:4759   1st Qu.:4457  
  Median :1670   Median :6073   Median :5718  
@@ -58,9 +63,12 @@ Let compare scale
 colMeans(present)[1]-colMeans(arbuthnot)[1]
 colMeans(present)/colMeans(arbuthnot)
 ```
->
+Console output
+```r
+>colMeans(present)[1]-colMeans(arbuthnot)[1]
  year 
 301.5 
->      year       boys      girls 
+>colMeans(present)/colMeans(arbuthnot)
+      year       boys      girls 
   1.180593 319.209155 324.124597 
 ```
